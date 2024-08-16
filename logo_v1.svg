@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 923 420" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" 
+xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <defs>
+        <style>
+            .jy1 {
+                transform: scaleY(0);
+                animation: growY 0.5s ease forwards;
+            }
+            .jy2 {
+                transform: scaleY(0);
+                animation: growY 0.5s 0.8s ease forwards;
+            }
+            .jx1 {
+                transform: scaleX(0);
+                animation: growX 0.5s 0.5s ease forwards;
+            }
+            .jx2 {
+                transform: scaleX(0);
+                animation: growX 0.5s 1.3s ease forwards;
+            }
+            .dy1 {
+                transform: scaleY(0);
+                animation: growY 0.5s 0.3s ease forwards;
+            }
+            .dy2 {
+                transform: scaleY(0);
+                transform-origin: bottom;
+                animation: growY 0.5s 0.8s ease forwards;
+            }
+            .dx1 {
+                transform: scaleX(0);
+                transform-origin: right;
+                animation: growX 0.5s 0.7s ease forwards;
+            }
+            .ddiag {
+                transform: scaleX(0);
+                animation: growX 0.5s 1.4s ease forwards;
+            }
+
+
+            @keyframes growY {
+                from {
+                    transform: scaleY(0);
+                }
+                to {
+                    transform: scaleY(1);
+                }
+            }
+
+            @keyframes growX {
+                from {
+                    transform: scaleX(0);
+                }
+                to {
+                    transform: scaleX(1);
+                }
+            }
+        </style>
+    </defs>
+    <g transform="matrix(1,0,0,1,-2051.47,0)">
+        <g id="ArtBoard2" transform="matrix(1,0,0,1,1041.77,0)">
+            <rect x="1009.7" y="0" width="922.16" height="584.006" style="fill:rgb(14,37,47);"/>
+            <g id="Senkrecht1" transform="matrix(1,0,0,1,1069.63,-54.1969)">
+                <g transform="matrix(1,0,0,1,109.825,0)">
+                    <rect class="jy1" x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,109.825,0)">
+                    <g transform="matrix(1,0,0,1,87.8796,0)">
+                        <rect class="dy1" x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-219.65,0)">
+                        <rect class="dx1" x="509.875" y="401.103" width="219.55" height="58.62" style="fill:rgb(255,31,79);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,0.425274,234.226,264.214)">
+                        <rect class="dy2" x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                    </g>
+                    <g transform="matrix(1,5.55112e-17,0,1,-219.65,0)">
+                        <clipPath id="_clip1">
+                            <path d="M687.821,418.091L731.72,374.192L590.205,232.677L546.306,276.576L687.821,418.091Z"/>
+                        </clipPath>
+                        <g clip-path="url(#_clip1)">
+                            <g>
+                                <rect class="ddiag" x="509.875" y="254.748" width="219.55" height="204.975" style="fill:rgb(255,31,79);"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,1179.46,-54.1969)">
+                <g id="Waagerecht1">
+                    <rect class="jx1" x="70.575" y="401.103" width="204.974" height="58.62" style="fill:rgb(255,31,79);"/>
+                </g>
+            </g>
+            <g id="Bits" transform="matrix(1,0,0,1,1069.63,-54.1969)">
+                <g transform="matrix(1,0,0,1,-7.47567,0)">
+                    <rect class="jx2" x="290.483" y="254.748" width="102.367" height="58.679" style="fill:rgb(255,31,79);"/>
+                </g>
+                <g transform="matrix(1,0,0,0.356719,-21.9454,295.731)">
+                    <rect class="jy2" x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                </g>
+            </g>
+            <g id="Details">
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 440 205" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-3312.57,-200.551)">
+        <g id="ArtBoard2" transform="matrix(0.476366,0,0,0.350981,2831.58,200.551)">
+            <rect x="1009.7" y="0" width="922.16" height="584.006" style="fill:none;"/>
+            <clipPath id="_clip1">
+                <rect x="1009.7" y="0" width="922.16" height="584.006"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g id="Senkrecht1" transform="matrix(2.09923,0,0,2.84916,630.827,-725.816)">
+                    <g transform="matrix(1,0,0,1,109.825,0)">
+                        <rect x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,109.825,0)">
+                        <g transform="matrix(1,0,0,1,87.8796,0)">
+                            <rect x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                        </g>
+                        <g transform="matrix(1,0,0,1,-219.65,0)">
+                            <rect x="509.875" y="401.103" width="219.55" height="58.62" style="fill:rgb(255,31,79);"/>
+                        </g>
+                        <g transform="matrix(1,0,0,0.425274,234.226,264.214)">
+                            <rect x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                        </g>
+                        <g transform="matrix(1,5.55112e-17,0,1,-219.65,0)">
+                            <clipPath id="_clip2">
+                                <path d="M687.821,418.091L731.72,374.192L590.205,232.677L546.306,276.576L687.821,418.091Z"/>
+                            </clipPath>
+                            <g clip-path="url(#_clip2)">
+                                <g>
+                                    <rect x="509.875" y="254.748" width="219.55" height="204.975" style="fill:rgb(255,31,79);"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g transform="matrix(2.09923,0,0,2.84916,861.374,-725.816)">
+                    <g id="Waagerecht1">
+                        <rect x="70.575" y="401.103" width="204.974" height="58.62" style="fill:rgb(255,31,79);"/>
+                    </g>
+                </g>
+                <g id="Bits" transform="matrix(2.09923,0,0,2.84916,630.827,-725.816)">
+                    <g transform="matrix(1,0,0,1,-7.47567,0)">
+                        <rect x="290.483" y="254.748" width="102.367" height="58.679" style="fill:rgb(255,31,79);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,0.356719,-21.9454,295.731)">
+                        <rect x="202.346" y="254.748" width="73.204" height="204.975" style="fill:rgb(255,31,79);"/>
+                    </g>
+                </g>
+                <g id="Details">
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
