@@ -1,5 +1,6 @@
 :root {
     --color-main: #FF1F4F;
+    --color-main-transparent: #FF1F4F20;
     --color-main-light: #ff3561;
     --color-accent: #185E77;
     --color-dark: #0E252F;
@@ -13,6 +14,9 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05ch;
+    line-height: 1.4rem;
     background: var(--color-dark);
     color: var(--color-light);
     margin: 0;
@@ -66,6 +70,173 @@ nav.show {
         max-width: 1400px;
         margin-inline: auto;
     }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.border-box-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-block: 2rem;
+}
+
+.border-box-animated {
+    position: relative;
+    margin-inline: auto;
+    background-color: var(--color-dark);
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    aspect-ratio: 1;
+    &::after,
+    &::before {
+        content: '';
+        background-image: conic-gradient(from var(--angle), transparent 65%, var(--color-main));
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 2px;
+        animation: 3s spin linear infinite;
+    }
+    &::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.border-box-half-y {
+    position: relative;
+    margin-inline: auto;
+    background-color: var(--color-dark);
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    aspect-ratio: 1;
+    &::after,
+    &::before {
+        content: '';
+        background-image: linear-gradient(var(--color-main), transparent 20% 80%, var(--color-main));
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 2px;
+    }
+    &::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+}
+
+.border-box-half-x {
+    position: relative;
+    margin-inline: auto;
+    background-color: var(--color-dark);
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    aspect-ratio: 1;
+    &::after,
+    &::before {
+        content: '';
+        background-image: linear-gradient(90deg, var(--color-main), transparent 20% 80%, var(--color-main));
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 2px;
+    }
+    &::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+}
+
+.progress-box {
+    position: relative;
+    margin-inline: auto;
+    background-color: var(--color-dark);
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    height: 1.6rem;
+    &::after,
+    &::before {
+        content: '';
+        background-image: linear-gradient(90deg, var(--color-main), transparent 20% 80%, var(--color-main));
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        padding: 2px;
+    }
+    &::before {
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+}
+
+.progress-box-bar {
+    width: 100%;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: attr(value)'%';
+        width: 100%;
+        top: 50%;
+        left: 0;
+        font-size: 0.6875rem;
+        font-weight: 700;
+        transform: translate(5px, -50%);
+    }
+}
+
+.progress-box-bar[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress-box-bar[value]::-webkit-progress-bar {
+    height: 1rem;
+    background-color: var(--color-main-transparent);
+}
+
+.progress-box-bar[value]::-webkit-progress-value {
+    background-color: var(--color-main);
 }
 
 section {

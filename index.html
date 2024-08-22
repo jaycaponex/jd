@@ -26,10 +26,53 @@
         <button class="btn --secondary"><span data-value="Button text is long">Button text is long</span></button>
     </div>
 
-    <div>
-        <form>
-            <input type="text" name="" id="">
-        </form>
+    <div class="border-box-container">
+        <div class="border-box-half-x">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur recusandae soluta placeat possimus natus voluptatum illo praesentium amet quod!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in sit libero dignissimos atque molestiae odio repudiandae odit harum velit.
+        </div>
+        <div class="border-box-animated">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur recusandae soluta placeat possimus natus voluptatum illo praesentium amet quod!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in sit libero dignissimos atque molestiae odio repudiandae odit harum velit.
+        </div>
+        <div class="border-box-half-y">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui consectetur recusandae soluta placeat possimus natus voluptatum illo praesentium amet quod!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci in sit libero dignissimos atque molestiae odio repudiandae odit harum velit.
+        </div>
+    </div>
+    <div class="progress-box">
+        <progress class="progress-box-bar" max="100" value="0"></progress>
+        <script>
+            (() => {
+                let options = {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold: 0,
+                };
+
+                const progressBar = document.querySelector(".progress-box-bar");
+
+                const progressObserver = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            if (!progressBar) return;
+                            let startVal = 0;
+                            const endVal = 30;
+                            const animateBar = setInterval(() => {
+                                progressBar.value = startVal;
+                                if (startVal < endVal) {
+                                    startVal++;
+                                    return;
+                                }
+                                clearInterval(animateBar);
+                            }, 30);
+                        }
+                    })
+                }, options);
+
+                progressObserver.observe(progressBar);
+            })();
+        </script>
     </div>
     <section id="s1">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla tempore omnis enim provident adipisci eligendi architecto. Vel quia velit nam quo quam libero dolor cumque id, dolorem numquam reprehenderit fugit, blanditiis voluptatem temporibus provident quisquam mollitia itaque eos nemo quae reiciendis consequuntur dolore cum fuga. Id quas saepe doloribus rem inventore repudiandae earum error velit enim voluptas? Non repellat cupiditate qui ut facere at, ipsam voluptates, reprehenderit maxime exercitationem eligendi odit fugit deleniti. Laborum provident deserunt velit! Qui ratione quisquam, numquam, rerum optio corrupti eius nihil non est, architecto quaerat. Odit aspernatur qui at id eligendi accusantium quas laborum!</p>
@@ -37,6 +80,11 @@
     <section>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla tempore omnis enim provident adipisci eligendi architecto. Vel quia velit nam quo quam libero dolor cumque id, dolorem numquam reprehenderit fugit, blanditiis voluptatem temporibus provident quisquam mollitia itaque eos nemo quae reiciendis consequuntur dolore cum fuga. Id quas saepe doloribus rem inventore repudiandae earum error velit enim voluptas? Non repellat cupiditate qui ut facere at, ipsam voluptates, reprehenderit maxime exercitationem eligendi odit fugit deleniti. Laborum provident deserunt velit! Qui ratione quisquam, numquam, rerum optio corrupti eius nihil non est, architecto quaerat. Odit aspernatur qui at id eligendi accusantium quas laborum!</p>
     </section>
+    <div>
+        <form>
+            <input type="text" name="" id="">
+        </form>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
