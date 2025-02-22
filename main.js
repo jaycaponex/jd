@@ -1,7 +1,7 @@
 (() => {
 
     const nav = document.querySelector('nav');
-    const logo = document.querySelector('.intro-logo > img');
+    const logo = document.querySelector('.intro-logo > svg');
     // const scrollWatcher = document.createElement('div');
 
     // scrollWatcher.setAttribute('data-scroll-watcher', '');
